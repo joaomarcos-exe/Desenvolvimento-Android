@@ -9,12 +9,13 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/editNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Digite seu nome"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -22,7 +23,30 @@
         android:hint="Digite seu email">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="enviar"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="limpar"
+        android:text="Limpar" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        android:textSize="18sp" />
+
 </LinearLayout>
